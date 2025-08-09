@@ -1,7 +1,7 @@
 import { WeatherData } from '../types/Weather';
 
 export class ChatService {
-  private readonly API_KEY = 'AIzaSyCpVPGQa8eoB_a-ttot7WJrKbzSymgVx5o';
+  private readonly API_KEY = 'your_gemini_api_key';
   private readonly API_URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent';
 
   async sendMessage(message: string, weatherData: WeatherData | null): Promise<string> {
